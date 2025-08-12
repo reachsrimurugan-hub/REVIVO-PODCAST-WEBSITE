@@ -17,7 +17,6 @@ _No fluff. Just fuel._
 ## 📖 Features
 - **Trending Podcasts** fetched from ListenNotes API
 - **Search Functionality** with real-time API results
-- **Dark/Light Theme Toggle**
 - **Responsive Design** for mobile and desktop
 - **Built-in Audio Player** for each podcast
 
