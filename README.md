@@ -10,7 +10,7 @@ _No fluff. Just fuel._
 
 ## 📸 Output Preview
 
-![WEBSITE Screenshot](Screenshot.png) <!-- Take a screenshot of your app and save as screenshot.png -->
+![WEBSITE Screenshot](public/images/Screenshot.png) <!-- Take a screenshot of your app and save as screenshot.png -->
 
 ---
 
