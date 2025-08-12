@@ -5,10 +5,6 @@
 **Revivo** is more than a podcast — it's a mindset. Whether you're chasing success, struggling with doubt, or just need that weekly spark, this is where you level up.  
 _No fluff. Just fuel._
 
----
-
-## 🚀 Live Preview
-*(Replace with your deployed link if hosting on Vercel, Render, or Netlify)*  
 
 ---
 
