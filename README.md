@@ -1,4 +1,4 @@
-# 🎙️ Revivo Podcast App
+# 🎙️ Revivo Podcast Website
 
 ![Revivo Logo](logo.png)
 
