@@ -1,6 +1,6 @@
 # 🎙️ Revivo Podcast Website
 
-![Revivo Logo](logo.png)
+![Revivo Logo](public/images/logo.png)
 
 **Revivo** is more than a podcast — it's a mindset. Whether you're chasing success, struggling with doubt, or just need that weekly spark, this is where you level up.  
 _No fluff. Just fuel._
