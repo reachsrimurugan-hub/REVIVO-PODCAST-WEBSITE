@@ -31,7 +31,7 @@ _No fluff. Just fuel._
 ### Frontend:
 - **HTML5** – Page structure
 - **CSS3** – Styling and layout
-- **JavaScript (Vanilla)** – DOM manipulation & API calls
+- **JavaScript** – DOM manipulation & API calls
 
 ### Backend:
 - **Node.js & Express** – Server and API routes
