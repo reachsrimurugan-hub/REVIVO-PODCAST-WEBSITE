@@ -1,0 +1,370 @@
+body {
+  margin: 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Light Theme (default) */
+:root {
+  /* Brand colors */
+  --podcast-primary: #8b5cf6;
+  --podcast-secondary: #8b5cf6;
+  --podcast-accent: #06b6d4;
+  --podcast-success: #10b981;
+  --podcast-warning: #f59e0b;
+  --podcast-danger: #ef4444;
+
+  /* Light background colors */
+  --podcast-bg-primary: #ffffff;
+  --podcast-bg-secondary: #f8fafc;
+  --podcast-bg-card: #f1f5f9;
+  --podcast-bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+  /* Light text colors */
+  --podcast-text-primary: #8b5cf6;
+  --podcast-text-secondary: #000000;
+  --podcast-text-muted: #64748b;
+
+  /* Borders & shadows */
+  --podcast-border: #6366f1;
+  --podcast-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+  --podcast-shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+
+  /* Radius & transitions */
+  --podcast-radius: 16px;
+  --podcast-radius-lg: 24px;
+  --podcast-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 🌙 Dark Theme Override */
+.revivo-dark,
+.revivo-dark * {
+  --podcast-bg-primary: #0f172a;
+  --podcast-bg-secondary: #1e293b;
+  --podcast-bg-card: #334155;
+  --podcast-bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+  --podcast-text-primary: #f8fafc;
+  --podcast-text-secondary: #cbd5e1;
+  --podcast-text-muted: #94a3b8;
+  --bs-secondary-color: #94a3b8 !important;
+
+  --podcast-border: #475569;
+  --podcast-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.3);
+  --podcast-shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+}
+
+/* Global Styles */
+body {
+  background: var(--podcast-bg-primary);
+  color: var(--podcast-text-primary);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--podcast-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--podcast-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--podcast-secondary);
+}
+
+/* Theme helpers */
+.revivo-dark {
+  background: var(--podcast-bg-primary);
+  color: var(--podcast-text-primary);
+}
+
+.revivo-card {
+  background: var(--podcast-bg-card);
+  border: 1px solid var(--podcast-border);
+  border-radius: var(--podcast-radius);
+  box-shadow: var(--podcast-shadow);
+}
+
+/* Sticky Mini Player */
+.sticky-miniplayer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1030;
+  background: transparent;
+  backdrop-filter: blur(20px);
+}
+
+/* Interactive Elements */
+.clickable {
+  cursor: pointer;
+  transition: var(--podcast-transition);
+}
+
+.clickable:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--podcast-shadow-lg) !important;
+}
+
+/* Custom Button Styles */
+.btn-podcast {
+  background: var(--podcast-primary);
+  border: none;
+  border-radius: var(--podcast-radius);
+  color: var(--podcast-bg-secondary);
+  font-weight: 600;
+  padding: 12px 24px;
+  transition: var(--podcast-transition);
+  box-shadow: var(--podcast-shadow);
+}
+
+.btn-podcast:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--podcast-shadow-lg);
+  color: white;
+}
+
+.btn-podcast-outline {
+  background: transparent;
+  border: 2px solid var(--podcast-primary);
+  border-radius: var(--podcast-radius);
+  color: var(--podcast-primary);
+  font-weight: 600;
+  padding: 12px 24px;
+  transition: var(--podcast-transition);
+}
+
+.btn-podcast-outline:hover {
+  background: var(--podcast-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Custom Card Styles */
+.card-podcast {
+  background: var(--podcast-bg-card);
+  border: 1px solid var(--podcast-border);
+  border-radius: var(--podcast-radius-lg);
+  box-shadow: var(--podcast-shadow);
+  transition: var(--podcast-transition);
+  overflow: hidden;
+}
+
+.card-podcast:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--podcast-shadow-lg);
+  border-color: var(--podcast-primary);
+}
+
+.card-podcast .card-img-top {
+  transition: var(--podcast-transition);
+}
+
+.card-podcast:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Custom Badge Styles */
+.badge-podcast {
+  background: var(--podcast-gradient);
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-trending {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.badge-new {
+  background: linear-gradient(135deg, #257b14 0%, #059669 100%);
+}
+
+.badge-editors-pick {
+  background: linear-gradient(135deg, #e00808 0%, #e00808 100%);
+}
+
+/* Header search styling */
+.navbar {
+  background: var(--podcast-bg-secondary) !important;
+  border-bottom: 1px solid var(--podcast-border);
+  backdrop-filter: blur(20px);
+}
+
+.navbar .input-group .form-control {
+  border-radius: 25px 0 0 25px;
+  border: 2px solid var(--podcast-border);
+  background: var(--podcast-bg-card);
+  color: var(--podcast-text-primary);
+  padding: 12px 20px;
+}
+
+.navbar .input-group .form-control::placeholder {
+  color: var(--podcast-text-muted);
+}
+
+.navbar .input-group .form-control:focus {
+  background: var(--podcast-bg-card);
+  border-color: var(--podcast-primary);
+  box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+  color: var(--podcast-text-primary);
+}
+
+.navbar .input-group .btn {
+  border-radius: 0 25px 25px 0;
+  border: 2px solid var(--podcast-primary);
+  border-left: none;
+  background: var(--podcast-primary);
+  color: white;
+  padding: 12px 20px;
+}
+
+.navbar .input-group .btn:hover {
+  background: var(--podcast-secondary);
+  border-color: var(--podcast-secondary);
+}
+
+.navbar-brand {
+  color: var(--podcast-primary);
+}
+
+.navbar-brand:hover {
+  color: var(--podcast-text-primary);
+}
+
+.footer-link.active,
+.footer-link:hover,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.nav-link:hover {
+  color: var(--podcast-text-primary);
+}
+
+.nav-link,
+.footer-link {
+  color: var(--podcast-text-secondary);
+}
+
+/* Custom Form Styles */
+.form-control {
+  background: var(--podcast-bg-card);
+  border: 2px solid var(--podcast-border);
+  border-radius: var(--podcast-radius);
+  color: var(--podcast-text-primary);
+  padding: 12px 16px;
+  transition: var(--podcast-transition);
+}
+
+.form-control:focus {
+  background: var(--podcast-bg-card);
+  border-color: var(--podcast-primary);
+  box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+  color: var(--podcast-text-primary);
+}
+
+.form-select {
+  background: var(--podcast-bg-card);
+  border: 2px solid var(--podcast-border);
+  border-radius: var(--podcast-radius);
+  color: var(--podcast-text-primary);
+  padding: 12px 16px;
+}
+
+/* Custom Pagination */
+.pagination .page-link {
+  background: var(--podcast-bg-card);
+  border: 1px solid var(--podcast-border);
+  color: var(--podcast-text-primary);
+  margin: 0 2px;
+  border-radius: var(--podcast-radius);
+  transition: var(--podcast-transition);
+}
+
+.pagination .page-link:hover {
+  background: var(--podcast-primary);
+  border-color: var(--podcast-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.pagination .page-item.active .page-link {
+  background: var(--podcast-gradient);
+  border-color: var(--podcast-primary);
+  color: white;
+}
+
+/* Custom Swiper Styles */
+.swiper-pagination-bullet {
+  background: var(--podcast-primary);
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--podcast-secondary);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--podcast-primary);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: var(--podcast-shadow);
+}
+
+/* Custom Loading Spinner */
+.spinner-border {
+  color: var(--podcast-primary);
+}
+
+/* Custom Alert Styles */
+.alert-podcast {
+  background: var(--podcast-bg-card);
+  border: 1px solid var(--podcast-border);
+  border-radius: var(--podcast-radius);
+  color: var(--podcast-text-primary);
+}
+
+/* Custom List Group */
+.list-group-item {
+  background: var(--podcast-bg-card);
+  border: 1px solid var(--podcast-border);
+  color: var(--podcast-text-primary);
+  transition: var(--podcast-transition);
+}
+
+.list-group-item:hover {
+  background: var(--podcast-bg-secondary);
+  border-color: var(--podcast-primary);
+}
+
+.list-group-item-action:hover {
+  background: var(--podcast-bg-secondary);
+  color: var(--podcast-text-primary);
+}
+
+/* Podcast card */
+.card-img-top{
+  aspect-ratio: 2/2.4;
+  object-fit: cover;
+}
