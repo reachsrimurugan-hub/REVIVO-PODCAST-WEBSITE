@@ -3,7 +3,7 @@ Revivo is a modern podcast discovery platform designed to provide curated collec
 ## Website Preview
 
 ![Homepage](images/homepage.png)
-![Podcast Page](images/podcast List.png)
-![Podcast Details](images/podcast Details.png)
-![Search Results](images/Search Results.png)
-![Contact Page](images/Contact Page.png)
+![Podcast Page](images/podcastList.png)
+![Podcast Details](images/podcastDetails.png)
+![Search Results](images/SearchResults.png)
+![Contact Page](images/ContactPage.png)
