@@ -17,8 +17,17 @@ REVIVO Podcast Website is a responsive web platform designed to present and prom
 
 ## Website Preview
 
-![Homepage](images/homepage.png)
-![PodcastPage](images/podcastList.png)
-![PodcastDetails](images/podcastDetails.png)
-![SearchResults](images/SearchResults.png)
-![ContactPage](images/ContactPage.png)
+### Home Page
+<img src="images/homepage.png" width="700">
+
+### PodcastList Page
+<img src="images/PodcastList.png" width="700">
+
+### PodacastDetails Page
+<img src="images/PodcastDetails.png" width="700">
+
+### Podcast Search
+<img src="images/SerachResults.png" width="700">
+
+### Feedback Page
+<img src="images/feedbackpage.png" width="700">
