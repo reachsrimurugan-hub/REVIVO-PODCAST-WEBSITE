@@ -8,6 +8,7 @@ REVIVO Podcast Website is a responsive web platform designed to present and prom
 * Multimedia integration for audio content
 * Structured layout for easy content presentation
 * Fast and lightweight frontend implementation
+
 ##TECH STACK
 
 * HTML5 – Structure and content of the website
