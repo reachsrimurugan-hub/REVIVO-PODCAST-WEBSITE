@@ -30,4 +30,4 @@ REVIVO Podcast Website is a responsive web platform designed to present and prom
 <img src="images/SearchResults.png" width="700">
 
 ### Feedback Page
-<img src="images/Contactpage.png" width="700">
+<img src="images/ContactPage.png" width="700">
